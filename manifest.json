@@ -1,0 +1,21 @@
+{
+  "name": "La Patate Dorée - Frites et Burgers Belges",
+  "short_name": "La Patate Dorée",
+  "description": "Découvrez l'authentique friterie belge La Patate Dorée - Frites, burgers et spécialités belges.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#F5F1E3",
+  "theme_color": "#E6B325",
+  "icons": [
+    {
+      "src": "images/logo_patate_doree.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/logo_patate_doree.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

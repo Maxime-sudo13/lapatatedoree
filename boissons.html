@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boissons - La Patate Dorée</title>
+    <meta name="description" content="Découvrez notre sélection de boissons : sodas, bières belges, vins et eaux pour accompagner vos repas à La Patate Dorée.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/chef-patate-new.png" type="image/png">
+    <!-- Polices Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/chef-patate-new.png" alt="Logo La Patate Dorée">
+                </a>
+            </div>
+            <nav>
+                <button class="mobile-menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="boissons.html" class="active">Boissons</a></li>
+                    <li><a href="about.html">À Propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social-commander">
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+                <a href="contact.html" class="btn-primary">Commander</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Bannière Boissons -->
+        <section class="page-banner drinks-banner">
+            <div class="container">
+                <h1>Nos Boissons</h1>
+                <p>Des rafraîchissements qui accompagnent parfaitement votre repas</p>
+            </div>
+        </section>
+
+        <!-- Navigation par catégories -->
+        <nav class="menu-navigation">
+            <div class="container">
+                <ul class="menu-tabs">
+                    <li><a href="#sodas" class="active" data-target="sodas">Sodas</a></li>
+                    <li><a href="#eaux" data-target="eaux">Eaux</a></li>
+                    <li><a href="#bieres" data-target="bieres">Bières</a></li>
+                    <li><a href="#energisantes" data-target="energisantes">Énergisantes</a></li>
+                    <li><a href="#vins" data-target="vins">Vins</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Section Sodas -->
+        <section id="sodas" class="menu-section active">
+            <div class="container">
+                <h2>Sodas et Rafraîchissements</h2>
+                <p class="section-intro">Des boissons fraîches pour accompagner votre repas.</p>
+                
+                <div class="drinks-grid">
+                    <div class="drink-card">
+                        <div class="drink-icon">
+                            <i class="fas fa-glass"></i>
+                        </div>
+                        <div class="drink-info">
+                            <h3>Coca-Cola</h3>
+                            <span class="price">€2,50</span>
+                        </div>
+                    </div>
+                    <div class="drink-card">
+                        <div class="drink-icon">
+                            <i class="fas fa-glass"></i>
+                        </div>
+                        <div class="drink-info">
+                            <h3>Coca-Cola Zero</h3>
+                            <span class="price">€2,50</span>
+                        </div>
+                    </div>
+                    <div class="drink-card">
+                        <div class="drink-icon">
+                            <i class="fas fa-glass"></i>
+                        </div>
+                        <div class="drink-info">
+                            <h3>Fanta Orange</h3>
+                            <span class="price">€2,50</span>
+                        </div>
+                    </div>
+                    <div class="drink-card">
+                        <div class="drink-icon">
+                            <i class="fas fa-glass"></i>
+                        </div>
+                        <div class="drink-info">
+                            <h3>Fanta Citron</h3>
+                            <span class="price">€2,50</span>
+                        </div>
+                    </div>
+                    <div class="drink-card">
+                        <div class="drink-icon">
+                            <i class="fas fa-glass"></i>
+                        </div>
+                        <div class="drink-info">
+                            <h3>Fanta Kiwi Fraise</h3>
+                            <span class="price">€2,50</span>
+                        </div>
+                    </div>
+                    <div class="drink-card">
+                        <div class="drink-icon">
+                            <i class="fas fa-glass"></i>
+                        </div>
+                        <div class="drink-info">
+                            <h3>Sprite</h3>
+                            <span class="price">€2,50</span>
+                        </div>
+                    </div>
+                    <div class="drink-card">
+                        <div class="drink-icon">
+                            <i class="fas fa-glass"></i>
+                        </div>
+                        <div class="drink-info">
+                            <h3>Oasis Tropical</h3>
+                            <span class="price">€2,50</span>
+                        </div>
+                    </div>
+                    <div class="drink-card">
+                        <div class="drink-icon">
+                            <i class="fas fa-glass"></i>
+                        </div>
+                        <div class="drink-info">
+                            <h3>Oasis Pomme Cassis</h3>
+                            <span class="price">€2,50</span>
+                        </div>
+                    </div>
+                    <div class="drink-card">
+                        <div class="drink-icon">
+                            <i class="fas fa-glass"></i>
+                        </div>
+                        <div class="drink-info">
+                            <h3>Orangina</h3>
+                            <span class="price">€2,50</span>
+                        </div>
+                    </div>
+                    <div class="drink-card">
+                        <div class="drink-icon">
+                            <i class="fas fa-glass"></i>
+                        </div>
+                        <div class="drink-info">
+                            <h3>Schweppes Agrum</h3>
+                            <span class="price">€2,50</span>
+                        </div>
+                    </div>
+                    <div class="drink-card">
+                        <div class="drink-icon">
+                            <i class="fas fa-glass"></i>
+                        </div>
+                        <div class="drink-info">
+                            <h3>7UP Mojito</h3>
+                            <span class="price">€2,50</span>
+                        </div>
+                    </div>
+                    <div class="drink-card">
+                        <div class="drink-icon">
+                            <i class="fas fa-glass"></i>
+                        </div>
+                        <div class="drink-info">
+                            <h3>Ice Tea Pêche</h3>
+                            <span class="price">€2,50</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Eaux -->
+        <section id="eaux" class="menu-section">
+            <div class="container">
+                <h2>Eaux</h2>
+                <p class="section-intro">Des eaux plates et pétillantes pour se rafraîchir.</p>
+                
+                <div class="drinks-grid">
+                    <div class="drink-card featured">
+                        <div class="drink-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <div class="drink-info">
+                            <h3>Cristalline</h3>
+                            <p>Eau plate rafraîchissante</p>
+                            <span class="price">€1,50</span>
+                        </div>
+                    </div>
+                    <div class="drink-card featured">
+                        <div class="drink-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <div class="drink-info">
+                            <h3>Eau Aromatisée Fraise</h3>
+                            <p>Saveur fruitée et rafraîchissante</p>
+                            <span class="price">€2,00</span>
+                        </div>
+                    </div>
+                    <div class="drink-card featured">
+                        <div class="drink-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <div class="drink-info">
+                            <h3>Eau Aromatisée Pêche</h3>
+                            <p>Saveur fruitée et rafraîchissante</p>
+                            <span class="price">€2,00</span>
+                        </div>
+                    </div>
+                    <div class="drink-card featured">
+                        <div class="drink-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <div class="drink-info">
+                            <h3>Perrier</h3>
+                            <p>Eau pétillante</p>
+                            <span class="price">€2,50</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Bières -->
+        <section id="bieres" class="menu-section">
+            <div class="container">
+                <h2>Bières</h2>
+                <p class="section-intro">Une sélection de bières de qualité pour accompagner vos plats.</p>
+                
+                <div class="beer-categories">
+                    <div class="beer-category">
+                        <h3>Bières Classiques</h3>
+                        <div class="beer-item">
+                            <div class="beer-info">
+                                <h4>Heineken</h4>
+                                <p>La référence internationale</p>
+                            </div>
+                            <span class="price">€2,50</span>
+                        </div>
+                    </div>
+                    
+                    <div class="beer-category">
+                        <h3>Bières Spéciales</h3>
+                        <div class="beer-item">
+                            <div class="beer-info">
+                                <h4>Desperados</h4>
+                                <p>Bière aromatisée à la Tequila</p>
+                            </div>
+                            <span class="price">€3,50</span>
+                        </div>
+                        
+                        <div class="beer-item">
+                            <div class="beer-info">
+                                <h4>Batin</h4>
+                                <p>Bière belge de caractère</p>
+                            </div>
+                            <span class="price">€4,00</span>
+                        </div>
+                        
+                        <div class="beer-item">
+                            <div class="beer-info">
+                                <h4>Batin Fruitée</h4>
+                                <p>Notes fruitées et rafraîchissantes</p>
+                            </div>
+                            <span class="price">€4,50</span>
+                        </div>
+                        
+                        <div class="beer-item featured">
+                            <div class="beer-info">
+                                <h4>Orval</h4>
+                                <p>Bière trappiste, un incontournable belge</p>
+                            </div>
+                            <span class="price">€6,00</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="beer-note">
+                    <p><i class="fas fa-info-circle"></i> <em>L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</em></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Boissons Énergisantes -->
+        <section id="energisantes" class="menu-section">
+            <div class="container">
+                <h2>Boissons Énergisantes</h2>
+                <p class="section-intro">Pour un coup de boost.</p>
+                
+                <div class="drinks-grid">
+                    <div class="drink-card featured">
+                        <div class="drink-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="drink-info">
+                            <h3>Red Bull</h3>
+                            <p>Boisson énergisante classique</p>
+                            <span class="price">€3,00</span>
+                        </div>
+                    </div>
+                    <div class="drink-card featured">
+                        <div class="drink-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="drink-info">
+                            <h3>Monster</h3>
+                            <p>Énergie intense</p>
+                            <span class="price">€4,50</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Vins -->
+        <section id="vins" class="menu-section">
+            <div class="container">
+                <h2>Vins</h2>
+                <p class="section-intro">Une sélection de vins pour accompagner votre repas.</p>
+                
+                <div class="wine-options">
+                    <div class="wine-option">
+                        <h3>Vin au Verre</h3>
+                        <p>Rouge, blanc ou rosé selon sélection</p>
+                        <span class="price">€2,50</span>
+                    </div>
+                    
+                    <div class="wine-option">
+                        <h3>Carafe</h3>
+                        <p>Idéal pour 2-3 personnes</p>
+                        <span class="price">€6,00</span>
+                    </div>
+                    
+                    <div class="wine-option">
+                        <h3>Bouteille</h3>
+                        <p>Pour accompagner votre repas en groupe</p>
+                        <span class="price">€9,00</span>
+                    </div>
+                </div>
+                
+                <div class="beer-note">
+                    <p><i class="fas fa-info-circle"></i> <em>L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</em></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/chef-patate-new.png" alt="Logo La Patate Dorée">
+                <p>L'authenticité belge dans votre assiette!</p>
+            </div>
+            <div class="footer-info">
+                <h4>Contact</h4>
+                <address>
+                    Rue Irinée Leroy<br>
+                    54260 Saint-Jean-Lès-Longuyon, France<br>
+                    <a href="tel:+3311508959">+33 (0)6 11 50 89 59</a><br>
+                    <a href="mailto:lapatedoree54@gmail.com">lapatedoree54@gmail.com</a>
+                </address>
+            </div>
+            <div class="footer-hours">
+                <h4>Horaires</h4>
+                <ul>
+                    <li><span>Mercredi au Dimanche:</span> 18h00 - 21h00</li>
+                    <li><span>Lundi et Mardi:</span> Fermé</li>
+              
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Liens Rapides</h4>
+                <ul>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">À Propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Suivez-nous</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 La Patate Dorée. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

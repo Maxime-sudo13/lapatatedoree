@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - La Patate Dorée</title>
+    <meta name="description" content="Découvrez notre menu de frites belges authentiques, burgers gourmets, snacks variés et sauces maison à La Patate Dorée.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/chef-patate-new.png" type="image/png">
+    <!-- Polices Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/chef-patate-new.png" alt="Logo La Patate Dorée">
+                </a>
+            </div>
+            <nav>
+                <button class="mobile-menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="menu.html" class="active">Menu</a></li>
+                    <li><a href="boissons.html">Boissons</a></li>
+                    <li><a href="about.html">À Propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social-commander">
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+                <a href="contact.html" class="btn-primary">Commander</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Bannière du Menu -->
+        <section class="page-banner menu-banner">
+            <div class="container">
+                <h1>Notre Menu</h1>
+                <p>Découvrez nos spécialités préparées avec passion et savoir-faire</p>
+            </div>
+        </section>
+
+        <!-- Navigation par catégories -->
+        <nav class="menu-navigation">
+            <div class="container">
+                <ul class="menu-tabs">
+                    <li><a href="#frites" class="active" data-target="frites">Frites</a></li>
+                    <li><a href="#burgers" data-target="burgers">Burgers</a></li>
+                    <li><a href="#snacks" data-target="snacks">Snacks</a></li>
+                    <li><a href="#sauces" data-target="sauces">Sauces</a></li>
+                    <li><a href="#formules" data-target="formules">Formules</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Section Frites -->
+        <section id="frites" class="menu-section active">
+            <div class="container">
+                <h2>Nos Frites Authentiques</h2>
+                <p class="section-intro">Nos frites sont préparées selon la tradition belge: coupées à la main, cuites deux fois pour un résultat croustillant à l'extérieur et moelleux à l'intérieur. Nous utilisons exclusivement des pommes de terre fraîches de qualité supérieure.</p>
+                
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h3>Grande Portion</h3>
+                            <p>La quantité parfaite pour les grandes faims ou à partager</p>
+                        </div>
+                        <span class="menu-item-price">€4,00</span>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h3>Petite Portion</h3>
+                            <p>La quantité idéale pour accompagner vos plats</p>
+                        </div>
+                        <span class="menu-item-price">€3,00</span>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h3>Format Américain</h3>
+                            <p>Nos frites généreusement garnies de votre viande préférée</p>
+                        </div>
+                        <span class="menu-item-price">€5,00 + prix de la viande</span>
+                    </div>
+                </div>
+                
+                <div class="menu-image">
+                    <img src="images/frites_belges.png" alt="Nos frites belges authentiques">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Burgers -->
+        <section id="burgers" class="menu-section">
+            <div class="container">
+                <h2>Nos Burgers Gourmets</h2>
+                <p class="section-intro">Tous nos burgers sont préparés avec des ingrédients frais et de qualité.</p>
+                
+                <div class="burgers-grid">
+                    <div class="burger-card featured">
+                        <div class="burger-image">
+                            <img src="images/hamburger_pain_noir.webp" alt="Black Burger">
+                            <span class="badge">PREMIUM</span>
+                        </div>
+                        <div class="burger-info">
+                            <h3>Black Burger</h3>
+                            <p>Pain noir au charbon, steak de bœuf Black Angus (200g), salade, tomate, oignons au choix</p>
+                            <span class="price">€12,00</span>
+                        </div>
+                    </div>
+                    
+                    <div class="burger-card featured">
+                        <div class="burger-image">
+                            <img src="images/burger_gourmet.png" alt="Burger Fermier">
+                        </div>
+                        <div class="burger-info">
+                            <h3>Burger Fermier</h3>
+                            <p>Pain blanc rustique, steak de bœuf origine ferme (125g), salade, tomate, oignons au choix, œuf fermier, bacon croustillant</p>
+                            <span class="price">€11,00</span>
+                        </div>
+                    </div>
+                    
+                    <div class="burger-card">
+                        <div class="burger-info">
+                            <h3>Burger Classic</h3>
+                            <p>Pain blanc rustique, steak de bœuf origine ferme (125g), salade, tomate, oignons au choix</p>
+                            <span class="price">€9,00</span>
+                        </div>
+                    </div>
+                    
+                    <div class="burger-card">
+                        <div class="burger-info">
+                            <h3>Chicken Burger</h3>
+                            <p>Pain blanc rustique, tenders de poulet croustillants, salade, tomate, oignons au choix</p>
+                            <span class="price">€6,00</span>
+                        </div>
+                    </div>
+                    
+                    <div class="burger-card">
+                        <div class="burger-info">
+                            <h3>Chili Burger</h3>
+                            <p>Pain épicé, mexicano, salade, tomate, oignons au choix - Pour les amateurs de sensations</p>
+                            <span class="price">€6,00</span>
+                        </div>
+                    </div>
+                    
+                    <div class="burger-card">
+                        <div class="burger-info">
+                            <h3>Bicky Burger</h3>
+                            <p>Le classique belge: pain au sésame, steak belge, salade, tomate, oignons</p>
+                            <span class="price">€4,50</span>
+                        </div>
+                    </div>
+                    
+                    <div class="burger-card">
+                        <div class="burger-info">
+                            <h3>Fish Burger</h3>
+                            <p>Pain au sésame, poisson pané frais, salade, tomate, oignons</p>
+                            <span class="price">€4,50</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="burger-supplements">
+                    <h3>Personnalisez votre burger</h3>
+                    <div class="supplements-grid">
+                        <div class="supplement">
+                            <p>Fromage Cheddar</p>
+                            <span class="price">€0,50</span>
+                        </div>
+                        <div class="supplement">
+                            <p>Fromage d'Orval</p>
+                            <span class="price">€1,00</span>
+                        </div>
+                        <div class="supplement">
+                            <p>Bacon croustillant</p>
+                            <span class="price">€1,00</span>
+                        </div>
+                        <div class="supplement">
+                            <p>Œuf</p>
+                            <span class="price">€1,00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Snacks -->
+        <section id="snacks" class="menu-section">
+            <div class="container">
+                <h2>Nos Snacks Variés</h2>
+                <p class="section-intro">Une large sélection de snacks pour tous les goûts.</p>
+                
+                <div class="snacks-columns">
+                    <div class="snacks-column">
+                        <h3>Viandes</h3>
+                        <ul class="snacks-list">
+                            <li>
+                                <span class="snack-name">Américain Steak</span>
+                                <span class="snack-price">€12,00</span>
+                            </li>
+                            <li>
+                                <span class="snack-name">Cervela</span>
+                                <span class="snack-price">€4,00</span>
+                            </li>
+                            <li>
+                                <span class="snack-name">Fricadelle</span>
+                                <span class="snack-price">€3,00</span>
+                            </li>
+                            <li>
+                                <span class="snack-name">Mexicanos</span>
+                                <span class="snack-price">€3,50</span>
+                            </li>
+                            <li>
+                                <span class="snack-name">Viandelle</span>
+                                <span class="snack-price">€3,50</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="snacks-column">
+                        <h3>Spécialités Poulet</h3>
+                        <ul class="snacks-list">
+                            <li>
+                                <span class="snack-name">Chixfingers (x6)</span>
+                                <span class="snack-price">€3,50</span>
+                            </li>
+                            <li>
+                                <span class="snack-name">Nuggets (x6)</span>
+                                <span class="snack-price">€3,50</span>
+                            </li>
+                            <li>
+                                <span class="snack-name">Poulycroc</span>
+                                <span class="snack-price">€3,50</span>
+                            </li>
+                            <li>
+                                <span class="snack-name">Poulycroc Fromage</span>
+                                <span class="snack-price">€3,50</span>
+                            </li>
+                            <li>
+                                <span class="snack-name">Tenders (x3)</span>
+                                <span class="snack-price">€4,00</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="snacks-column">
+                        <h3>Autres Favoris</h3>
+                        <ul class="snacks-list">
+                            <li>
+                                <span class="snack-name">Croquette Fromage</span>
+                                <span class="snack-price">€3,00</span>
+                            </li>
+                            <li>
+                                <span class="snack-name">Loempia</span>
+                                <span class="snack-price">€4,00</span>
+                            </li>
+                            <li>
+                                <span class="snack-name">Lucifer</span>
+                                <span class="snack-price">€3,50</span>
+                            </li>
+                            <li>
+                                <span class="snack-name">Ragoezi</span>
+                                <span class="snack-price">€3,50</span>
+                            </li>
+                            <li>
+                                <span class="snack-name">Taco</span>
+                                <span class="snack-price">€4,00</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="snacks-column">
+                        <h3>Brochettes - €4,00</h3>
+                        <ul class="snacks-list">
+                            <li>
+                                <span class="snack-name">Brochette de Poulet</span>
+                            </li>
+                            <li>
+                                <span class="snack-name">Brochette Ardennaise</span>
+                            </li>
+                            <li>
+                                <span class="snack-name">Brochette de Porc</span>
+                            </li>
+                            <li>
+                                <span class="snack-name">Pilons de Poulet</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Sauces -->
+        <section id="sauces" class="menu-section">
+            <div class="container">
+                <h2>Nos Sauces</h2>
+                <p class="section-intro">Préparées maison pour accompagner parfaitement vos frites et snacks.</p>
+                
+                <div class="sauces-container">
+                    <div class="sauces-column">
+                        <h3>Sauces Froides - €1,00</h3>
+                        <div class="sauces-grid">
+                            <div class="sauce">Américaine</div>
+                            <div class="sauce">Andalouse</div>
+                            <div class="sauce">Ardennaise</div>
+                            <div class="sauce">Barbecue</div>
+                            <div class="sauce">Béarnaise</div>
+                            <div class="sauce">Bicky</div>
+                            <div class="sauce">Brésil</div>
+                            <div class="sauce">Cocktail</div>
+                            <div class="sauce">Curry</div>
+                            <div class="sauce">Curry Ketchup</div>
+                            <div class="sauce">Curry Oignons</div>
+                            <div class="sauce">Mayonnaise</div>
+                            <div class="sauce">Pitta</div>
+                            <div class="sauce">Samouraï</div>
+                            <div class="sauce">Tartare</div>
+                            <div class="sauce">Ketchup</div>
+                            <div class="sauce">Moutarde</div>
+                            <div class="sauce">Poivre</div>
+                        </div>
+                    </div>
+                    
+                    <div class="sauces-column">
+                        <h3>Sauce Chaude</h3>
+                        <div class="sauce-chaude">
+                            <p>Sauce Fromage</p>
+                            <p>Notre fondue de fromages, onctueuse et savoureuse</p>
+                            <span class="price">€3,00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Formules -->
+        <section id="formules" class="menu-section">
+            <div class="container">
+                <h2>Formules et Menus</h2>
+                <div class="formule-card">
+                    <h3>Menu Burger</h3>
+                    <p>Transformez n'importe quel burger en menu complet comprenant:</p>
+                    <ul>
+                        <li>Burger au choix</li>
+                        <li>Portion de frites</li>
+                        <li>Sauce au choix</li>
+                        <li>Boisson soft</li>
+                    </ul>
+                    <div class="formule-footer">
+                        <span class="price">+€4,00</span>
+                        <a href="contact.html" class="btn-primary">Commander</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/chef-patate-new.png" alt="Logo La Patate Dorée">
+                <p>L'authenticité belge dans votre assiette!</p>
+            </div>
+            <div class="footer-info">
+                <h4>Contact</h4>
+                <address>
+                    Rue Irinée Leroy<br>
+                    54260 Saint-Jean-Lès-Longuyon, France<br>
+                    <a href="tel:+33611508959">+33 (0)6 11 50 89 59</a><br>
+                    <a href="mailto:lapatatedore54@gmail.com">lapatatedore54@gmail.com</a>
+                </address>
+            </div>
+            <div class="footer-hours">
+                <h4>Horaires</h4>
+                <ul>
+                    <li><span>Lundi - Mardi:</span> Fermé</li>
+                        <li><span>Mercredi - Dimanche:</span> 18h00 - 21h00</li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Liens Rapides</h4>
+                <ul>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">À Propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Suivez-nous</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 La Patate Dorée. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Patate Dorée - L'authenticité belge dans votre assiette</title>
+    <meta name="description" content="Découvrez La Patate Dorée, friterie belge authentique proposant des frites croustillantes, des burgers gourmets et une large sélection de sauces.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/new_logo_simple.png" type="image/png">
+    <!-- Polices Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- PWA Support -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#E6B325">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="images/new_logo_simple.png">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/chef-patate-new.png" alt="Logo La Patate Dorée">
+                </a>
+            </div>
+            <nav>
+                <button class="mobile-menu-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="boissons.html">Boissons</a></li>
+                    <li><a href="about.html">À Propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social-commander">
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+                <a href="contact.html" class="btn-primary">Commander</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section Bannière -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>La Patate Dorée</h1>
+                    <p class="tagline">L'authenticité belge dans votre assiette</p>
+                    <a href="menu.html" class="btn-primary">Voir notre menu</a>
+                </div>
+                <div class="hero-image">
+                    <img src="images/chef-patate-new.png" alt="La Patate Dorée - Frites belges et burgers" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Nos Spécialités -->
+        <section class="specialites">
+            <div class="container">
+                <h2>Nos Spécialités</h2>
+                <div class="specialites-grid">
+                    <div class="specialite-card">
+                        <div class="specialite-image">
+                            <img src="images/frites_belges.png" alt="Frites Authentiques" loading="lazy">
+                        </div>
+                        <div class="specialite-content">
+                            <h3>Frites Authentiques</h3>
+                            <p>Préparées selon la tradition belge : coupées à la main et cuites deux fois pour un résultat parfait - croustillantes à l'extérieur et moelleuses à l'intérieur.</p>
+                        </div>
+                    </div>
+                    <div class="specialite-card">
+                        <div class="specialite-image">
+                            <img src="images/burger_gourmet.png" alt="Burgers Gourmets" loading="lazy">
+                        </div>
+                        <div class="specialite-content">
+                            <h3>Burgers Gourmets</h3>
+                            <p>Du classique au plus élaboré, nos burgers sont préparés avec des ingrédients frais et de qualité. Essayez notre Black Burger avec son steak de Black Angus!</p>
+                        </div>
+                    </div>
+                    <div class="specialite-card">
+                        <div class="specialite-image">
+                            <img src="images/LaWilliam_LOGO_TransparanteAchtergrond_BlauweTekst_HR.png" alt="Large Choix de Sauces" loading="lazy">
+                        </div>
+                        <div class="specialite-content">
+                            <h3>Large Choix de Sauces</h3>
+                            <p>Plus de 18 sauces différentes pour accompagner vos frites et snacks, des classiques aux plus originales. Toutes préparées selon nos recettes maison.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Offres Spéciales -->
+        <section class="offres-speciales">
+            <div class="container">
+                <h2>Offres Spéciales</h2>
+                <div class="offres-grid">
+                    <div class="offre-card">
+                        <h3>Menu Burger</h3>
+                        <p>Transformez n'importe quel burger en menu complet! Ajoutez seulement 4€ pour avoir:</p>
+                        <ul>
+                            <li>Frites</li>
+                            <li>Sauce au choix</li>
+                            <li>Boisson soft</li>
+                        </ul>
+                        <p class="prix-offre">+€4.00</p>
+                    </div>
+                    <div class="offre-card">
+                        <h3>Happy Hour</h3>
+                        <p>Tous les jours de 15h à 17h, bénéficiez de -20% sur toutes les bières.</p>
+                        <p class="prix-offre">-20%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Pourquoi Nous Choisir -->
+        <section class="pourquoi-nous">
+            <div class="container">
+                <h2>Pourquoi Choisir La Patate Dorée ?</h2>
+                <div class="pourquoi-grid">
+                    <div class="pourquoi-card">
+                        <div class="pourquoi-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h3>Qualité garantie</h3>
+                        <p>Ingrédients frais et préparations maison pour une expérience gustative inégalée.</p>
+                    </div>
+                    <div class="pourquoi-card">
+                        <div class="pourquoi-icon">
+                            <i class="fas fa-history"></i>
+                        </div>
+                        <h3>Authenticité</h3>
+                        <p>Recettes traditionnelles belges transmises de génération en génération.</p>
+                    </div>
+                    <div class="pourquoi-card">
+                        <div class="pourquoi-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Service rapide</h3>
+                        <p>Sur place ou à emporter, nous nous efforçons de vous servir promptement.</p>
+                    </div>
+                    <div class="pourquoi-card">
+                        <div class="pourquoi-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Ambiance conviviale</h3>
+                        <p>Un lieu chaleureux où chacun, des plus petits aux plus grands, trouve son bonheur.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Témoignages -->
+        <section class="temoignages">
+            <div class="container">
+                <h2>Ce Que Disent Nos Clients</h2>
+                <div class="temoignages-slider">
+                    <div class="temoignage active">
+                        <p class="citation">"Les meilleures frites de la région! La sauce andalouse est incroyable."</p>
+                        <p class="client">Marie D.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="temoignage">
+                        <p class="citation">"Le Black Burger est une véritable explosion de saveurs. À essayer absolument!"</p>
+                        <p class="client">Thomas L.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="temoignage">
+                        <p class="citation">"Service rapide et sympathique, produits frais et délicieux. Que demander de plus?"</p>
+                        <p class="client">Sophie M.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="images/chef-patate-new.png" alt="Logo La Patate Dorée" loading="lazy">
+                    <p>L'authenticité belge dans votre assiette!</p>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <div class="footer-info">
+                    <h4>Contact</h4>
+                    <address>
+                        Rue Irinée Leroy<br>
+                        54260 Saint-Jean-Lès-Longuyon, France<br>
+                        <a href="tel:+33611508959">+33 (0)6 11 50 89 59</a><br>
+                        <a href="mailto:lapatatedore54@gmail.com">lapatatedore54@gmail.com</a>
+                    </address>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <div class="footer-hours">
+                    <h4>Horaires</h4>
+                    <ul>
+                        <li><span>Lundi - Mardi:</span> Fermé</li>
+                        <li><span>Mercredi - Dimanche:</span> 18h00 - 21h00</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <div class="footer-links">
+                    <h4>Liens Rapides</h4>
+                    <ul>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">À Propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <div class="footer-social">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 La Patate Dorée. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

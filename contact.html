@@ -71,32 +71,23 @@
                                 France
                             </address>
                         </div>
-                        
                         <div class="info-block">
                             <h3><i class="fas fa-phone"></i> Téléphone</h3>
-                            <p><a href="tel:+3311508959">+33 (0)6 11 50 89 59</a></p>
+                            <p><a href="tel:+33611508959">+33 (0)6 11 50 89 59</a></p>
                         </div>
-                        
                         <div class="info-block">
                             <h3><i class="fas fa-envelope"></i> Email</h3>
-                            <p><a href="mailto:contact@lapatedoree.be">lapatedoree54@gmail.com</a></p>
+                            <p><a href="mailto:lapatedoree54@gmail.com">lapatedoree54@gmail.com</a></p>
                         </div>
                     </div>
-                    
                     <div class="trouver-horaires">
                         <h3><i class="fas fa-clock"></i> Horaires d'Ouverture</h3>
                         <ul class="horaires-list">
-                            <li>
-                                <span class="jour">Lundi - Mardi:</span>
-                                <span class="heures">Fermé</span>
-                            </li>
-                            <li>
-                                <span class="jour">Mercredi - Dimanche:</span>
-                                <span class="heures">18h00 - 21h00</span>
-                            </li>
+                            <li><span class="jour">Lundi - Mardi:</span><span class="heures">Fermé</span></li>
+                            <li><span class="jour">Mercredi - Dimanche:</span><span class="heures">18h00 - 21h00</span></li>
                         </ul>
                         <div class="horaires-alert">
-                            <p><i class="fas fa-exclamation-circle"></i> Note importante : Nos horaires peuvent varier en raison d'un second emploi. Pour être sûr de ne rien manquer et connaître nos horaires en temps réel, rejoignez-nous sur notre page Facebook ou notre groupe WhatsApp ! Des promotions exclusives vous y attendent également !</p>
+                            <p><i class="fas fa-exclamation-circle"></i> Note importante : Nos horaires peuvent varier en raison d'un second emploi. Pour être sûr de ne rien manquer, rejoignez-nous sur notre page Facebook ou groupe WhatsApp !</p>
                             <a href="https://chat.whatsapp.com/example-group-link" class="btn-primary whatsapp-btn" target="_blank" style="display: inline-block; width: 100%; margin-bottom: 10px; padding: 15px; font-size: 24px; border-radius: 25px; background-color: #F4B41A; text-align: center; font-weight: bold;">
                                 <i class="fab fa-whatsapp"></i> REJOINDRE LA COMMUNAUTÉ WHATSAPP
                             </a>
@@ -109,7 +100,7 @@
             </div>
         </section>
 
-        <!-- Section Commander -->
+        <!-- Section Commander + Formulaire -->
         <section class="contact-section commander">
             <div class="container">
                 <div class="commander-message-container">
@@ -117,89 +108,74 @@
                         <h2>Commander</h2>
                         <div class="option-block">
                             <h3><i class="fas fa-store"></i> Sur Place</h3>
-                            <p>Venez directement dans notre établissement pour déguster nos spécialités sur place ou à emporter. Commande rapide au comptoir.</p>
+                            <p>Venez directement dans notre établissement pour déguster nos spécialités.</p>
                         </div>
-                        
                         <div class="option-block">
                             <h3><i class="fas fa-phone-alt"></i> Par Téléphone</h3>
-                            <p>Pour commander à l'avance et éviter l'attente, appelez-nous au <a href="tel:+3221234567">+33 (0)6 11 50 89 59</a>.</p>
+                            <p>Commandez à l'avance au <a href="tel:+33611508959">+33 (0)6 11 50 89 59</a>.</p>
                         </div>
-                        
                         <div class="option-block">
                             <h3><i class="fab fa-whatsapp"></i> Via WhatsApp</h3>
                             <p><a href="https://wa.me/33611508959" target="_blank" class="whatsapp-link">Cliquez ici pour nous contacter sur WhatsApp</a></p>
                         </div>
-                        
                     </div>
-                    
+
+                    <!-- 🔁 Nouveau formulaire -->
                     <div class="contact-form">
                         <h2>Envoyez-nous un message</h2>
-                        <form id="contactForm" action="#" method="post">
-                            <div class="form-group">
-                                <label for="nom">Nom</label>
-                                <input type="text" id="nom" name="nom" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="sujet">Sujet</label>
-                                <input type="text" id="sujet" name="sujet" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
-                            </div>
-                            
-                            <button type="submit" class="btn-primary">Envoyer</button>
-                        </form>
+                        <form action="https://formsubmit.co/lapatatedoree54@gmail.com" method="POST">
+                            <!-- Champ nom -->
+                            <input type="text" name="nom" id="nom" placeholder="Votre nom" required>
+                          
+                            <!-- Champ email -->
+                            <input type="email" name="email" id="email" placeholder="Votre email" required>
+                          
+                            <!-- Champ sujet -->
+                            <input type="text" name="sujet" id="sujet" placeholder="Sujet" required>
+                          
+                            <!-- Champ message -->
+                            <textarea name="message" id="message" placeholder="Votre message" required></textarea>
+                          
+                            <!-- Empêche le captcha de Formsubmit -->
+                            <input type="hidden" name="_captcha" value="false">
+                          
+                            <!-- Redirection après soumission -->
+                            <input type="hidden" name="_next" value="https://lapatatedoree.netlify.app/contact">
+                          
+                            <!-- Bouton d'envoi -->
+                            <button type="submit">Envoyer</button>
+                          </form>
+                          
                     </div>
                 </div>
             </div>
         </section>
 
-        
-        <!-- Section Carte -->
+        <!-- Google Maps -->
         <section class="contact-section carte">
             <div class="container">
                 <h2>Plan d'Accès</h2>
                 <div class="carte-container">
-                    <!-- Emplacement pour intégrer Google Maps -->
-                    <div class="map-placeholder">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80599.05434778223!2d4.29764407449809!3d50.850434985957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c486740f9fff%3A0x10099ab2f4c8030!2sBruxelles!5e0!3m2!1sfr!2sbe!4v1683994547302!5m2!1sfr!2sbe" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="100%" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
 
-
-        <!-- Section Réseaux Sociaux -->
+        <!-- Réseaux Sociaux -->
         <section class="contact-section social">
             <div class="container">
                 <h2>Suivez-nous sur les Réseaux Sociaux</h2>
                 <div class="social-large">
-                    <a href="#" class="social-link" aria-label="Facebook">
-                        <i class="fab fa-facebook-f"></i>
-                        <span>@LaPatateDoree</span>
-                    </a>
-                    <a href="#" class="social-link" aria-label="Instagram">
-                        <i class="fab fa-instagram"></i>
-                        <span>@patate_doree</span>
-                    </a>
-                    <a href="#" class="social-link" aria-label="Twitter">
-                        <i class="fab fa-twitter"></i>
-                        <span>@PatateDoree</span>
-                    </a>
+                    <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i><span>@LaPatateDoree</span></a>
+                    <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i><span>@patate_doree</span></a>
+                    <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i><span>@PatateDoree</span></a>
                 </div>
-                <p class="social-hashtag">N'hésitez pas à partager vos expériences avec le hashtag <strong>#LaPatateDoree</strong> !</p>
+                <p class="social-hashtag">Partagez vos expériences avec <strong>#LaPatateDoree</strong> !</p>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-container">
             <div class="footer-logo">
@@ -210,16 +186,16 @@
                 <h4>Contact</h4>
                 <address>
                     Rue Irinée Leroy<br>
-                        54260 Saint-Jean-Lès-Longuyon, France<br>
-                        <a href="tel:+33611508959">+33 (0)6 11 50 89 59</a><br>
-                        <a href="mailto:lapatatedore54@gmail.com">lapatatedore54@gmail.com</a>
+                    54260 Saint-Jean-Lès-Longuyon, France<br>
+                    <a href="tel:+33611508959">+33 (0)6 11 50 89 59</a><br>
+                    <a href="mailto:lapatatedore54@gmail.com">lapatatedore54@gmail.com</a>
                 </address>
             </div>
             <div class="footer-hours">
                 <h4>Horaires</h4>
                 <ul>
-                    <li><span>Mercredi au Dimanche:</span> 18h00 - 21h00</li>
-                    <li><span>Lundi et Mardi:</span> Fermé</li>
+                    <li><span>Mer - Dim:</span> 18h00 - 21h00</li>
+                    <li><span>Lun & Mar:</span> Fermé</li>
                 </ul>
             </div>
             <div class="footer-links">
@@ -246,6 +222,7 @@
         </div>
     </footer>
 
+    <!-- JS Script -->
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -594,15 +594,6 @@ section {
     transition: transform var(--transition-moyenne);
 }
 
-.pourquoi-card {
-    text-align: center;
-    padding: var(--espacement-l);
-    background-color: var(--blanc);
-    border-radius: var(--rayon-moyen);
-    box-shadow: var(--ombre-legere);
-    transition: transform var(--transition-moyenne);
-}
-
 .pourquoi-card:hover {
     transform: translateY(-5px);
 }

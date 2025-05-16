@@ -577,6 +577,14 @@ section {
 .pourquoi-nous {
     padding: var(--espacement-xxl) 0;
 }
+
+.pourquoi-grid {
+    display: grid;
+;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--espacement-l);
+}
+
 .pourquoi-card {
     text-align: center;
     padding: var(--espacement-l);
@@ -585,7 +593,6 @@ section {
     box-shadow: var(--ombre-legere);
     transition: transform var(--transition-moyenne);
 }
-
 
 .pourquoi-card {
     text-align: center;

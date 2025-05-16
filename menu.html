@@ -16,37 +16,39 @@
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/chef-patate-new.png" alt="Logo La Patate Dorée">
-                </a>
-            </div>
-            <nav>
-                <button class="mobile-menu-toggle" aria-label="Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="menu.html" class="active">Menu</a></li>
-                    <li><a href="boissons.html">Boissons</a></li>
-                    <li><a href="about.html">À Propos</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="social-commander">
-                <div class="social-icons">
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                </div>
-                <a href="contact.html" class="btn-primary">Commander</a>
-            </div>
+    <div class="header-container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/chef-patate-new.png" alt="Logo La Patate Dorée">
+                <span class="enseigne">La Patate Dorée</span>
+            </a>
         </div>
-    </header>
+        <nav>
+            <button class="mobile-menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="boissons.html">Boissons</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">À Propos</a></li>
 
+            </ul>
+        </nav>
+        <div class="social-commander">
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="whatsapp"><i class="fab fa-whatsapp"></i></a>
+
+            </div>
+            <a href="contact.html" class="btn-commander">Commander</a>
+        </div>
+    </div>
+</header>
     <main>
         <!-- Bannière du Menu -->
         <section class="page-banner menu-banner">
@@ -116,7 +118,7 @@
         <!-- Section Burgers -->
         <section id="burgers" class="menu-section">
             <div class="container">
-                <h2>Nos Burgers Gourmets</h2>
+                <h2>Nos Burgers</h2>
                 <p class="section-intro">Tous nos burgers sont préparés avec des ingrédients frais et de qualité.</p>
                 
                 <div class="burgers-grid">
@@ -219,10 +221,6 @@
                         <h3>Viandes</h3>
                         <ul class="snacks-list">
                             <li>
-                                <span class="snack-name">Américain Steak</span>
-                                <span class="snack-price">€12,00</span>
-                            </li>
-                            <li>
                                 <span class="snack-name">Cervela</span>
                                 <span class="snack-price">€4,00</span>
                             </li>
@@ -261,6 +259,10 @@
                                 <span class="snack-price">€3,50</span>
                             </li>
                             <li>
+                                <span class="snack-name">Lucifer</span>
+                                <span class="snack-price">€3,50</span>
+                            </li>
+                            <li>
                                 <span class="snack-name">Tenders (x3)</span>
                                 <span class="snack-price">€4,00</span>
                             </li>
@@ -277,10 +279,6 @@
                             <li>
                                 <span class="snack-name">Loempia</span>
                                 <span class="snack-price">€4,00</span>
-                            </li>
-                            <li>
-                                <span class="snack-name">Lucifer</span>
-                                <span class="snack-price">€3,50</span>
                             </li>
                             <li>
                                 <span class="snack-name">Ragoezi</span>
@@ -318,7 +316,7 @@
         <section id="sauces" class="menu-section">
             <div class="container">
                 <h2>Nos Sauces</h2>
-                <p class="section-intro">Préparées maison pour accompagner parfaitement vos frites et snacks.</p>
+                <p class="section-intro">Nous travaillons avec La William ! </p>
                 
                 <div class="sauces-container">
                     <div class="sauces-column">
@@ -346,10 +344,10 @@
                     </div>
                     
                     <div class="sauces-column">
-                        <h3>Sauce Chaude</h3>
+                    <h3>Sauce Chaude</h3>
                         <div class="sauce-chaude">
-                            <p>Sauce Fromage</p>
-                            <p>Notre fondue de fromages, onctueuse et savoureuse</p>
+                            <p>Fromage</p>
+                            <p>Uniquement le vendredi, samedi et dimanche. Préparation maison !</p>
                             <span class="price">€3,00</span>
                         </div>
                     </div>
@@ -360,7 +358,7 @@
         <!-- Section Formules -->
         <section id="formules" class="menu-section">
             <div class="container">
-                <h2>Formules et Menus</h2>
+                
                 <div class="formule-card">
                     <h3>Menu Burger</h3>
                     <p>Transformez n'importe quel burger en menu complet comprenant:</p>
@@ -371,9 +369,8 @@
                         <li>Boisson soft</li>
                     </ul>
                     <div class="formule-footer">
-                        <span class="price">+€4,00</span>
-                        <a href="contact.html" class="btn-primary">Commander</a>
-                    </div>
+                        <span class="price">Prix du burger +€4,00</span> 
+                    </div>       
                 </div>
             </div>
         </section>
@@ -414,9 +411,9 @@
             <div class="footer-social">
                 <h4>Suivez-nous</h4>
                 <div class="social-icons">
-                    <a href="#" aria-label="https://www.facebook.com/p/La-patate-dor%C3%A9e-61558868613498/"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="https://www.instagram.com/lapatatedoree_?igsh=ZmxzeGVzczFmdHR0&utm_source=qr"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="whatsapp"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>

@@ -209,9 +209,22 @@ header {
     margin: 0 auto;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: var(--espacement-s);
+}
+
 .logo img {
     height: 60px;
     width: auto;
+}
+
+.logo-text {
+    font-family: var(--police-titre);
+    color: var(--or-principal);
+    font-size: 1.5rem;
+    white-space: nowrap;
 }
 
 .nav-menu {
@@ -282,22 +295,59 @@ header {
 .social-commander {
     display: flex;
     align-items: center;
-    gap: var(--espacement-l);
+    gap: var(--espacement-m);
 }
 
 .social-icons {
     display: flex;
-    gap: var(--espacement-m);
+    gap: var(--espacement-s);
 }
 
 .social-icons a {
     color: var(--gris-fonce);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     transition: color var(--transition-rapide);
 }
 
 .social-icons a:hover {
     color: var(--or-principal);
+}
+
+.btn-commander {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--or-principal);
+    color: var(--noir);
+    font-family: var(--police-sous-titre);
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: var(--rayon-grand);
+    text-transform: uppercase;
+    transition: all var(--transition-rapide);
+    white-space: nowrap;
+    box-shadow: var(--ombre-legere);
+}
+
+.btn-commander:hover {
+    background-color: var(--or-fonce);
+    color: var(--blanc);
+    transform: translateY(-1px);
+    box-shadow: var(--ombre-moyenne);
+}
+
+@media (max-width: 768px) {
+    .logo-text {
+        display: none;
+    }
+    
+    .btn-commander {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .social-commander {
+        gap: var(--espacement-s);
+    }
 }
 
 /* Hero Section */
@@ -853,46 +903,64 @@ section {
 
 /* Formules */
 .formule-card {
-    max-width: 600px;
+    max-width: 400px; /* Largeur réduite pour mieux cadrer le contenu */
     margin: 0 auto;
     padding: var(--espacement-xl);
     background-color: var(--beige-clair);
     border-radius: var(--rayon-moyen);
     box-shadow: var(--ombre-moyenne);
     text-align: center;
+    font-family: var(--police-corps);
 }
 
 .formule-card h3 {
     font-size: 1.8rem;
     margin-bottom: var(--espacement-m);
+    color: var(--or-principal);
+    font-family: var(--police-titre);
+}
+
+.formule-card > p {
+    margin-bottom: var(--espacement-l);
+    color: var(--gris-fonce);
+    line-height: 1.6;
 }
 
 .formule-card ul {
-    text-align: left;
-    margin: var(--espacement-l) auto;
-    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto var(--espacement-l);
+    padding: 0;
+    max-width: 300px;
 }
 
 .formule-card ul li {
+    display: flex;
+    align-items: center;
     margin-bottom: var(--espacement-s);
-    position: relative;
-    padding-left: var(--espacement-l);
+    width: 100%;
+    padding: var(--espacement-xs) var(--espacement-s);
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: var(--rayon-petit);
 }
 
 .formule-card ul li::before {
     content: '✓';
     color: var(--or-principal);
-    position: absolute;
-    left: 0;
     font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: var(--espacement-s);
+    flex-shrink: 0;
 }
 
 .formule-footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: var(--espacement-l);
     margin-top: var(--espacement-l);
+    padding-top: var(--espacement-m);
+    border-top: 1px dashed var(--gris-moyen);
 }
 
 .formule-footer .price {
@@ -900,8 +968,11 @@ section {
     font-weight: 700;
     font-size: 1.8rem;
     color: var(--or-principal);
+    background-color: var(--blanc);
+    padding: var(--espacement-s) var(--espacement-l);
+    border-radius: var(--rayon-grand);
+    box-shadow: var(--ombre-legere);
 }
-
 /* Drinks */
 .drinks-grid {
     display: grid;
